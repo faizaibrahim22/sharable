@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Shareable Resume</title>
+    <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+    <center>
+        <form id="resume-form">
+            <hr>
+            <h1>Shareable RESUME BUILDER BY FAIZA</h1>
+            <hr>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="username">username</label>
+                <input type="text"  id="username" placeholder="username"/>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="name"/>
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" placeholder="lastname" />
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" placeholder="phone" />
+                <label for="email">Email:</label>
+                <input type="email" id="email"  placeholder="email"/>
+            </fieldset>
+            <fieldset>
+                <legend>Skills</legend>
+                <input type="text" id="skills" placeholder="skills"/>
+            </fieldset>
+            <fieldset>
+                <legend>Experiences</legend>
+                <input type="text" id="experiences" placeholder="experiences"/>
+            </fieldset>
+            <fieldset>
+                <legend>Education</legend>
+                <input type="text" id="education"  placeholder="education"/>
+            </fieldset>
+            <button type="submit"><b>Submit Resume</b></button>
+        </form>
+    </center>
+    <div id="resume-display" contenteditable="true"></div>
+
+    <div id="shareable-link-container"   style="display:none"></div>
+    <a href="#"  id="shareable-link"  target="_blank"></a>
+    <br>
+    <button id="download-pdf"> DOWNLOAD PDF</button>
+    <script src="script.js"></script>
+</body>
+</html>
